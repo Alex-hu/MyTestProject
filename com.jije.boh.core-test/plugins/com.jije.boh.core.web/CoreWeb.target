@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="CoreWebTarget" sequenceNumber="203">
+<locations>
+<location path="D:\project\lib\repository\localp2\web\bundlepool" type="Directory"/>
+</locations>
+</target>

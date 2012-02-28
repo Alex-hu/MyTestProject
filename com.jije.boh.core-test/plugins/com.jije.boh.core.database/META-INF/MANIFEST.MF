@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Resource
+Bundle-SymbolicName: com.jije.boh.core.database
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: CLOUD
+Bundle-ClassPath: .,bin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.sql,
+ org.apache.commons.dbcp;version="1.2.2.osgi",
+ org.h2;version="1.1.117"

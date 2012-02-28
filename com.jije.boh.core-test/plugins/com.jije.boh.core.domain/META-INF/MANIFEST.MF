@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Persistence
+Bundle-SymbolicName: com.jije.boh.core.domain
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.jije.boh.core.domain.Activator
+Bundle-Vendor: CLOUD
+Bundle-ClassPath: .,bin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.persistence,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.jije.boh.core.domain.model,
+ com.jije.boh.core.domain.servlet

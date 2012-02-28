@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.jije.boh.core.test.f"
+      label="jije.core.test.feature"
+      version="1.0.0.qualifier"
+      provider-name="Murphy">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+   <plugin id="com.jije.boh.core.jpa.test" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="com.jije.boh.core.jpa.test.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+</feature>

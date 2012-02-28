@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.jije.boh.core.f_0.0.0.jar" id="com.jije.boh.core.f" version="0.0.0"/>
+   <feature url="features/com.jije.boh.core.f.source_1.0.0.qualifier.jar" id="com.jije.boh.core.f.source" version="0.0.0"/>
+   <feature url="features/com.jije.boh.core.test.f_0.0.0.jar" id="com.jije.boh.core.test.f" version="0.0.0"/>
+</site>

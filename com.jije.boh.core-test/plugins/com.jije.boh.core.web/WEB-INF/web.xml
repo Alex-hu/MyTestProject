@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+
+	<display-name>Spring Web App</display-name>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<init-param>
+			<param-name>contextClass</param-name>
+			<param-value>org.eclipse.virgo.web.dm.ServerOsgiBundleXmlWebApplicationContext
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/app/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/resources/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResourcesServlet</servlet-name>
+		<servlet-class>com.jije.boh.core.web.ResourcesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ResourcesServlet</servlet-name>
+		<url-pattern>/moduleresources/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AnswerServlet</servlet-name>
+		<servlet-class>com.jije.boh.core.web.AnswerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AnswerServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

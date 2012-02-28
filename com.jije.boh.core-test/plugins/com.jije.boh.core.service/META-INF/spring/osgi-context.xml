@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd                      
+       http://www.springframework.org/schema/osgi  
+       http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<osgi:service interface="com.jije.boh.core.service.inter.IOperateService"
+		ref="operateService" />
+		
+	<osgi:reference interface="com.jije.boh.core.jpa.repository.UserRepository"
+		id="userDao" />
+		
+	<osgi:service
+		interface="com.jije.boh.core.service.inter.IActionServletHandler"
+		ref="actionServletHandler" /> 
+	
+	<osgi:list id="actionServlet" interface="com.jije.boh.core.service.inter.IActionServletService" cardinality="0..N" >
+		<osgi:listener bind-method="onBind"
+					   unbind-method="onUnbind"
+			           ref="actionServletHandler" />
+	</osgi:list> 
+
+</beans>
